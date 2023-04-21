@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1> <%= link_to 'Planter Demo Fun', root_path %> </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><%= link_to 'People', people_path %> </li>
+        <li><%= link_to 'Plants', plants_path %> </li>
+        <li><%= link_to 'Wiki Posts', wiki_posts_path %>
+      </ul>
+    </nav>
+    <main>
+    <%= yield %>
+    </main>
+  </body>
+</html>
