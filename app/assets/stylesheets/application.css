@@ -14,7 +14,7 @@
  *= require_self
  */
  nav {
-  background-color: #d1cfcf;
+  background-color: #959292;
 }
 
 nav ul {
@@ -28,17 +28,22 @@ nav ul li {
   padding: 10px;
   font-weight: bold;
   font-size: 16px;
+  color: black;
+}
+
+nav:visited {
+  color: black;
 }
 
 nav ul li:hover {
-  background-color: grey;
+  background-color: rgb(161, 158, 163);
   color: white;
-  
+  text-decoration: none;
 }
 
 nav ul li:hover a {
-  background-color: grey;
-  color: white;
+  background-color: rgb(176, 175, 175);
+  color: rgb(16, 16, 16);
   
 }
 
@@ -47,5 +52,26 @@ nav ul li:last-child {
 }
 
 body {
-  background-color: rgb(236, 234, 234);
+  background-color: rgb(230, 214, 235);
+  text-align: center;
+}
+
+.home {
+  display: inline-block;
+  background-color: rgb(118, 63, 172);
+  color: rgb(240, 236, 236);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.home:hover {
+  text-decoration: none;
+  background-color: rgb(161, 72, 233);
+}
+
+.people.index {
+  text-align: center;
 }

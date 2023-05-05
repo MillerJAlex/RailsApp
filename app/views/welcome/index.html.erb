@@ -1,3 +1,11 @@
 <h1>Welcome to the Wiki</h1>
-<p>Posts can go over here <%= link_to 'About', welcome_about_path %> </p>
 
+<div class='page info'>
+  <% @posts.each do |post| %>
+   <p>
+      <%= link_to post.title, wiki_post_path(post), class: 'wikiLink' %>
+   </p>
+  <% end %>
+</div>
+
+<%= link_to 'About', welcome_about_path %>

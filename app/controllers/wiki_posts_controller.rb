@@ -1,5 +1,5 @@
 class WikiPostsController < ApplicationController
-  before_action :set_wiki_post, only: %i[ edit update destroy ]
+  before_action :set_wiki_post, only: %i[ edit update destroy show ]
 
   # GET /wiki_posts or /wiki_posts.json
   def index
@@ -8,7 +8,9 @@ class WikiPostsController < ApplicationController
 
   # GET /wiki_posts/1 or /wiki_posts/1.json
   def show
-    render "example"
+  end
+
+  def example
   end
 
   # GET /wiki_posts/new
@@ -66,6 +68,6 @@ class WikiPostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def wiki_post_params
-      params.fetch(:wiki_post, {})
+      params.fetch(:wiki_post, {}).permit(:title, :description, :image, :author)
     end
 end
