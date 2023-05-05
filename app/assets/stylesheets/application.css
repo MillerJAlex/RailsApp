@@ -13,8 +13,18 @@
  *= require_tree .
  *= require_self
  */
+div.people_index {
+  width: 350px;
+  margin: 0 auto;
+}
+
+div.plants_index {
+  width: 250px;
+  margin: 0 auto;
+}
+
  nav {
-  background-color: #959292;
+  background-color: #858282;
 }
 
 nav ul {
@@ -70,8 +80,4 @@ body {
 .home:hover {
   text-decoration: none;
   background-color: rgb(161, 72, 233);
-}
-
-.people.index {
-  text-align: center;
 }
